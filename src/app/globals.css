@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.contador{
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.contador h1{
+  font-size: 1.5rem;
+}
+
+.contacto{
+  margin-left: 3rem;
+}
+
+.contacto h1{
+  margin: 3rem 0 0.5rem 0;
+  color: white;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+  color: black;
+}
+
+.form h2{
+  color: white;
+  margin: 3rem 0 0.5rem 0;
+}
+
+.form input{
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.form textarea{
+  padding: 0.5rem;
+  height: 15rem;
+  border: 1px solid black;
+}
+
+.form button{
+  color: white;
+  margin-top: 1rem;
+  border: 1px solid white;
+  width: 25%;
+  height: 2.5rem;
+  align-self: center;
+}
